@@ -1,0 +1,21 @@
+.battery {
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 6px 10px;
+  border-radius: 4px;
+  margin-right: 12px;
+
+  .bar {
+    display: inline-block;
+    width: 50px;
+    margin-right: 6px;
+  }
+
+  &__title {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Quicksand";
+    color: #eee;
+  }
+}

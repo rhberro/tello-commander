@@ -1,0 +1,61 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+#application {
+  height: 100%;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: space-between;
+  background-image: url("https://images.unsplash.com/photo-1497901545361-6aef9e9e19c4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2849&q=80");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  animation-name: simulate;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+
+  &__header {
+    display: flex;
+    align-items: flex-start;
+    padding: 12px;
+  }
+}
+
+@keyframes simulate {
+  0% {
+    background-position: 0% 0%;
+  }
+  20% {
+    background-position: 3% 3%;
+  }
+  40% {
+    background-position: 9% 6%;
+  }
+  60% {
+    background-position: 6% 9%;
+  }
+  80% {
+    background-position: 9% 6%;
+  }
+  100% {
+    background-position: 6% 3%;
+  }
+}

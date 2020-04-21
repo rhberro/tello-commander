@@ -1,0 +1,55 @@
+.bar {
+  flex: 1;
+
+  &__container {
+    position: relative;
+
+    height: 8px;
+
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 14px;
+
+    transition: background-color ease 300ms;
+
+    padding: 2px;
+
+    &--low {
+      border-color: rgba(red, 0.8);
+      background-color: rgba(red, 0.4);
+    }
+
+    &--medium {
+      border-color: rgba(yellow, 0.8);
+      background-color: rgba(yellow, 0.4);
+    }
+
+    &--high {
+      border-color: rgba(green, 0.8);
+      background-color: rgba(green, 0.4);
+    }
+  }
+
+  &__progress {
+    position: relative;
+
+    height: 100%;
+    width: 100%;
+
+    border-radius: 6px;
+
+    transition: width ease 300ms, background-color ease 300ms;
+
+    &--low {
+      background-color: lighten(red, 10%);
+    }
+
+    &--medium {
+      background-color: lighten(yellow, 10%);
+    }
+
+    &--high {
+      background-color: lighten(green, 10%);
+    }
+  }
+}

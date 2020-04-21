@@ -1,0 +1,16 @@
+{
+  "name": "tello-commander-server",
+  "description": "tello-commander-server",
+  "version": "1.0.0",
+  "license": "MIT",
+  "engines": {
+    "node": "12.4.0",
+    "npm": "6.9.0"
+  },
+  "dependencies": {
+    "socket.io": "^2.2.0"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}
